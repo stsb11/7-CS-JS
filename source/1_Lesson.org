@@ -32,7 +32,6 @@
 :HTML_CONTAINER_CLASS: try
 :END:
 * Introduction
-[[file:https:/upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: intro
 :END:
@@ -310,13 +309,14 @@ window.alert(choice);
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-To earn your first *Blue JavaScript Badge*, complete the tasks below. Once you have finished, ask your teacher to check your app to make sure it runs correctly.
-- Create a new file called Greeter.html
+- *Silver:* Create a new file called Greeter.html
 - Add in the standard html code that you need to start writing javascript. Next write code to do the following:
-- Welcome the user to the app, using a =window.alert()= message box.
-- Ask the user for their name using a =window.prompt()= message box and store the name as a variable.
-- Output a message using =window.alert()= that says "Hey, my name is XXXXXXX too".
-- Use a =window.prompt()= message box to ask the user how old they are and store their age as a variable.
-- Convert the variable to a =number=
-- Use a =window.alert()= box to display the message 'That means you will be 100 in the year ####' (/HINT: the calculation is 100 - age + current year/)
-- Use a =window.confirm()= box to ask if the user would like to continue.
+  - Welcome the user to the app, using a =window.alert()= message box.
+  - Ask the user for their name using a =window.prompt()= message box and store the name as a variable.
+  - Output a message using =window.alert()= that says "Hey, my name is XXXXXXX too".
+- *Gold:* Also complete these tasks...
+  - Use a =window.prompt()= message box to ask the user how old they are and store their age as a variable.
+  - Convert the variable to a =number=
+  - Use a =window.alert()= box to display the message 'You will be 100 in the year ####' 
+    - /HINT:/ the calculation is 100 - age + current year
+  - Use a =window.confirm()= box to ask if the user would like to continue.

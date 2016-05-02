@@ -135,11 +135,6 @@ for the JavaScript code in this tag.
 <div id="outline-container-sec-1" class="outline-2 intro">
 <h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
-
-<div class="figure">
-<p><img src="https:/upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="1200px-Unofficial_JavaScript_logo_2.svg.png" />
-</p>
-</div>
 </div>
 <div id="outline-container-sec-1-1" class="outline-3">
 <h3 id="sec-1-1">What is JavaScript?</h3>
@@ -178,16 +173,16 @@ For now we're going to write JavaScript inside an HTML file. This will make it e
 
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-&lt;script type="text/javascript"&gt;
-&lt;!--DELETE THIS ENTIRE LINE AND AND YOUR CODE HERE IN THE NEXT SECTION--&gt;
-&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<pre class="src src-html">&lt;<span style="color: #859900; font-weight: bold;">!DOCTYPE</span> html&gt;
+&lt;<span style="color: #268bd2;">html</span>&gt;
+&lt;<span style="color: #268bd2;">head</span>&gt;
+&lt;<span style="color: #268bd2;">script</span> <span style="color: #268bd2;">type</span>=<span style="color: #2aa198;">"text/javascript"</span>&gt;
+<span style="color: #93a1a1;">&lt;!--</span><span style="color: #93a1a1;">DELETE THIS ENTIRE LINE AND AND YOUR CODE HERE IN THE NEXT SECTION</span><span style="color: #93a1a1;">--&gt;</span>
+&lt;/<span style="color: #268bd2;">script</span>&gt;
+&lt;/<span style="color: #268bd2;">head</span>&gt;
+&lt;<span style="color: #268bd2;">body</span>&gt;
+&lt;/<span style="color: #268bd2;">body</span>&gt;
+&lt;/<span style="color: #268bd2;">html</span>&gt;
 </pre>
 </div>
 </div>
@@ -242,9 +237,9 @@ For now we're going to write JavaScript inside an HTML file. This will make it e
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-html">&lt;script type="text/javascript"&gt; 
-&lt;!--DELETE THIS ENTIRE LINE AND YOUR CODE HERE IN THE NEXT SECTION--&gt;
-&lt;/script&gt;
+<pre class="src src-html">&lt;<span style="color: #268bd2;">script</span> <span style="color: #268bd2;">type</span>=<span style="color: #2aa198;">"text/javascript"</span>&gt; 
+<span style="color: #93a1a1;">&lt;!--</span><span style="color: #93a1a1;">DELETE THIS ENTIRE LINE AND YOUR CODE HERE IN THE NEXT SECTION</span><span style="color: #93a1a1;">--&gt;</span>
+&lt;/<span style="color: #268bd2;">script</span>&gt;
 </pre>
 </div>
 <ul class="org-ul">
@@ -253,8 +248,8 @@ For now we're going to write JavaScript inside an HTML file. This will make it e
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">&lt;script type="text/javascript"&gt;
-window.alert('Losers Click OK');
+<pre class="src src-javascript">&lt;script type=<span style="color: #2aa198;">"text/javascript"</span>&gt;
+window.alert(<span style="color: #2aa198;">'Losers Click OK'</span>);
 &lt;/script&gt;
 </pre>
 </div>
@@ -374,7 +369,7 @@ Open your web-page in a web browser. What happens?
 
 <pre class="src src-html">var yourPet;
 yourPet = window.prompt('What type of pet do you have');
-window.alert("That's nice, I also have a " + yourPet);
+window.alert(<span style="color: #2aa198;">"That's nice, I also have a "</span> + yourPet);
 </pre>
 </div>
 <ul class="org-ul">
@@ -537,7 +532,7 @@ window.alert(myNum + yourNum);
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">var choice = window.confirm("Do you want to continue?");
+<pre class="src src-javascript"><span style="color: #859900; font-weight: bold;">var</span> <span style="color: #268bd2;">choice</span> = window.confirm(<span style="color: #2aa198;">"Do you want to continue?"</span>);
 window.alert(choice);
 </pre>
 </div>
@@ -566,14 +561,14 @@ window.alert(choice);
 </ul>
 <div class="org-src-container">
 
-<pre class="src src-javascript">var hasPet = window.confirm("Do you have a pet? Click OK if you do");
-if (hasPet == true)
+<pre class="src src-javascript"><span style="color: #859900; font-weight: bold;">var</span> <span style="color: #268bd2;">hasPet</span> = window.confirm(<span style="color: #2aa198;">"Do you have a pet? Click OK if you do"</span>);
+<span style="color: #859900; font-weight: bold;">if</span> (hasPet == <span style="color: #268bd2; font-weight: bold;">true</span>)
 {
-    window.alert("That's nice.");
+    window.alert(<span style="color: #2aa198;">"That's nice."</span>);
 }
-else
+<span style="color: #859900; font-weight: bold;">else</span>
 {
-    window.alert("Do you want to buy a dog?");
+    window.alert(<span style="color: #2aa198;">"Do you want to buy a dog?"</span>);
 };
 </pre>
 </div>
@@ -600,27 +595,34 @@ else
 <div id="outline-container-sec-8-1" class="outline-3 badge">
 <h3 id="sec-8-1">Task</h3>
 <div class="outline-text-3" id="text-8-1">
-<p>
-To earn your first <b>Blue JavaScript Badge</b>, complete the tasks below. Once you have finished, ask your teacher to check your app to make sure it runs correctly.
-</p>
 <ul class="org-ul">
-<li>Create a new file called Greeter.html
+<li><b>Silver:</b> Create a new file called Greeter.html
 </li>
 <li>Add in the standard html code that you need to start writing javascript. Next write code to do the following:
-</li>
+<ul class="org-ul">
 <li>Welcome the user to the app, using a <code>window.alert()</code> message box.
 </li>
 <li>Ask the user for their name using a <code>window.prompt()</code> message box and store the name as a variable.
 </li>
 <li>Output a message using <code>window.alert()</code> that says "Hey, my name is XXXXXXX too".
 </li>
+</ul>
+</li>
+<li><b>Gold:</b> Also complete these tasks&#x2026;
+<ul class="org-ul">
 <li>Use a <code>window.prompt()</code> message box to ask the user how old they are and store their age as a variable.
 </li>
 <li>Convert the variable to a <code>number</code>
 </li>
-<li>Use a <code>window.alert()</code> box to display the message 'That means you will be 100 in the year ####' (<i>HINT: the calculation is 100 - age + current year</i>)
+<li>Use a <code>window.alert()</code> box to display the message 'You will be 100 in the year ####' 
+<ul class="org-ul">
+<li><i>HINT:</i> the calculation is 100 - age + current year
+</li>
+</ul>
 </li>
 <li>Use a <code>window.confirm()</code> box to ask if the user would like to continue.
+</li>
+</ul>
 </li>
 </ul>
 </div>
