@@ -214,16 +214,15 @@ ELSE
 :HTML_CONTAINER_CLASS: code
 :END:
 - Let's use a simple conditional in JavaScript. You'll need to remove all your debugging lines from between the =<script>= tags, then write in the following lines.
-
 #+BEGIN_SRC javascript
   var choice = window.confirm('Click OK if you understand conditionals');
-  if (choice === true){
+  if (choice == true){
       window.alert('Then continue to the next section');
   }
   else {
       window.alert("You'd best ask for some help then.");
   };
-#+END_SRC python
+#+END_SRC
 ** Save It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: save
@@ -257,7 +256,7 @@ file:img/conditional.jpg
 - Now delete your old script and we'll type in a new one.
 #+BEGIN_SRC javascript
   var userName = window.prompt("Hi, what's your name?");
-  if (userName === 'Marc'){
+  if (userName == 'Marc'){
       window.alert('Nice to meet you ' + userName);
   }
   else{
@@ -318,7 +317,7 @@ file:img/conditional.jpg
 #+END_SRC
 - Next we'll use a conditional to see if they get the answer right. We'll update the score and use =console.log()= to output if they got the question right or not.
 #+BEGIN_SRC javascript
-  if (answerOne === "London"){
+  if (answerOne == "London"){
       score = score + 1;
       console.log('Question 1 correct');
       console.log('Score is ' + score);
@@ -347,12 +346,12 @@ file:img/conditional.jpg
 - At the moment, our code penalises people who accidentally forget to use a capital 'L' in London. Let's fix that.
 - Alter your code so that they get 1/2 a point if they use a lowercase 'l'
 #+BEGIN_SRC javascript
-  if (answerOne === "London"){
+  if (answerOne == "London"){
       score += 1;
       console.log('Question 1 correct');
       console.log('Score is ' + score);
   }
-  else if (answerOne === "london"){
+  else if (answerOne == "london"){
       score += 0.5;
       console.log('Question 1 correct');
       console.log('Score is ' + score);
@@ -404,7 +403,7 @@ file:img/conditional.jpg
       console.log('Question 3 close');
       score += 0.5;
   }
-  else if (answer3 === 1954){
+  else if (answer3 == 1954){
       console.log('Question 3 exactly right');
       score += 1;
   }
@@ -451,4 +450,4 @@ To earn your second *Blue JavaScript Badge*, complete the tasks below. Once you 
   - Display the user's percentage score.
   - Give them a congratulatory message if they scored higher than 59%
   - Give them a consolatory message if they scored lower than 60%
-  
+    
