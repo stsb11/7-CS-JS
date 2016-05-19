@@ -76,36 +76,14 @@
 - Find the file you just saved in your JavaScript directory.
 - Double click it to open it in your browser.
 - Now comes the little secret that only Hackers know about. We're going to open up an inspector which will allow us to see what is going on in any web-page. The way you do this depends on the browser you are using.
-*** Instructions for Internet Explorer
-    - Click on the gear symbol in the top right of the IE window and select 'F12 Developer Tools.
-[[file:img/IE1.png]]
-    - In the bottom left of the screen, choose the console icon.
-[[file:img/IE2.png]] 
-*** Instructions for Safari
-      - Safari likes to hide the developer menu. Click on Safari in the top left of the screen and select Preferences...
-[[file:img/safari1.png]]
-      - Choose the Advanced icon and then check the box to 'Show Developer menu in menu bar'. Close Preferences
-[[file:img/safari2.png]]
-      - From the now visible Develop menu, choose 'Show Error Console.
-[[file:img/safari3.png]]
-      - The Console should appear at the bottom of the screen.
-[[file:img/safari4.png]]
-*** Instructions for Chrome
-      - From the View menu, choose Developer and then JavaScript Console.
-[[file:img/chrome1.png]]
-      - The console will open in the bottom of the screen.
-[[file:img/chrome2.png]]
-*** Instructions for Firefox
-      - From the Tools menu choose Web Developer and then Web Console.
-[[file:img/firefox1.png]]
-      - The console should appear at the bottom of the screen
-[[file:img/firefox2.png]]
-- If the console does not appear to show a message, just refresh your browser.
+- To open the console of your browser (Firefox, Chrome and Internet Explorer), press F12. You should have a console open similar to the following:
+   [[file:./img/console.png]] 
 ** Try It:
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- Have a go at getting the console to display other messages.
+- Have a go at getting the console to display other messages. For example:
+   [[file:./img/console2.png]] 
 - Try declaring a variable =var myNumber = 100= for instance, and get the console to output the variable. 
 * Debugging your scripts.
 :PROPERTIES:
@@ -187,28 +165,22 @@ consolelog('Hi Dev, you've got it right.');
 var yourAnswer = window.prompt('How are you feeling?')
 windows.alert("I wonder why you're feeling "+ yourAnswer)
 #+END_SRC
+* Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Silver
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+- debug the three problems and upload a screenshot of your fixed code.    
 * Conditionals (1)
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
 - Conditionals are an important part of coding. You actually used a conditional in the first lesson.
 - Conditionals allow the program to make a choice, based on a certain condition being met. (Or sometimes several conditions.)
-- Imagine you are walking along a street and you come to a restaurant. A simplified conditional for what you do might look something like this;
-#+BEGIN_SRC web
-IF i am hungry
-    enter restaurant
-ELSE
-    continue walking
-#+END_SRC
-- Sometimes though decisions are a little more complex, and we might need to have more than just two options. Imagine you've sat down in the restaurant and the waiter has come to take your order.
-#+BEGIN_SRC web
-IF i am very hungry
-    order a starter and a main course
-ELSE IF i am only peckish
-    order a starter only
-ELSE
-    order a main course
-#+END_SRC
+
 ** Code It
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: code
@@ -239,47 +211,15 @@ ELSE
 :HTML_CONTAINER_CLASS: try
 :END:
 - Alter the code so a different question is asked, and different responses are given by the browser.
-* Conditionals (2)
+** Learn It:
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: learn
 :END:
-- Look at the code below and then read the explanation of the syntax.
-file:img/conditional.jpg
-- The first line is just a variable declaration and an assignment. If the user clicks *OK* then =choice = true=. If the user clicks *Cancel* then =choice = false=.
-- The second line is the beginning of our conditional. The /condition/ is always placed between brackets =()=.
-- At the end of the line is a curly bracket ={=. Everything between the ={}= happens only if the condition is met.
-- The last two lines cover what happens if the condition is not met. If the user clicked *Cancel*, then choice is =false= and the second =window.alert()= happens.
-** Code It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: code
-:END:
-- Now delete your old script and we'll type in a new one.
-#+BEGIN_SRC javascript
-  var userName = window.prompt("Hi, what's your name?");
-  if (userName == 'Marc'){
-      window.alert('Nice to meet you ' + userName);
-  }
-  else{
-      window.alert("I don't like the name " + userName);
-  };
-#+END_SRC
-** Save It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: save
-:END:
-- Save your code.
-** Run It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: run
-:END:
-- Run your code in a web browser
-** Try It:
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: try
-:END:
-- Change the code so it uses your name.
-- Get the program to ask the user another question, after the first one. Maybe it could ask them where they live, and then give a suitable response.
-- What happens if you use a lower case letter when typing in your name?
+- Lets examine what happens here. The confirm pop asks user to choose OK or Cancel. The OK choice is interprested by JavaScript as true, Cancel as false.
+- So if a user chooses OK, this is stored in the variable =choice=.
+- The variable choice then being checked to see which message to display.
+- The double equal == is for comparison.
+
 * Using Conditionals to make a quiz
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -434,7 +374,7 @@ Try and add your own Question similar to Question 3, where a range of numbers ca
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-** Task
+** Gold
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
