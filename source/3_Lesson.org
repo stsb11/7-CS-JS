@@ -40,25 +40,7 @@
   - Variables are used to store values.
   - You can use a variable to store Numbers, Strings, Booleans and lots more.
   - Variables need an identifier (a name)
-** Code It
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: code
-:END:
-- We're not going to write our code in an HTML document this time. We'll use the console instead.
-- Open a console, [[http://webmasters.stackexchange.com/questions/8525/how-to-open-the-javascript-console-in-different-browsers][here you can find a description of the shortcuts to open a console, if you have forgotten how.]]
-- We can write javascript code directly in the console. Try typing the following, just to test it out;
-#+BEGIN_SRC javascript
-  window.alert();
-#+END_SRC
-- Hopefully you should get an alert box popping up. Additionally the console will say the word =undefined=, don't worry about this.
-** Try It:
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: try
-:END:
-- Use the console to try a few more command. Here are some suggestions:
-  - =window.prompt()=
-  - =window.confirm()=
-  - For this one you need to use access a site that uses jQuery. Go to  [[http://jquery.com]] and type =$(function() {$('body').hide().fadeIn(5000);});= in the console. 
+
 * Declaring and Assigning Variables
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
@@ -137,9 +119,13 @@ num1 = num3 + num4
 #+END_SRC
 - Can you work out what all the variables will be?
 - Use =console.log()= to see if you are right.
-** Try It:
+* Badge It
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: try
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Silver:
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
 :END:
 - create two variables new variables and assign them the values 10 and 20 respectively.
 - Now write code that will output the following values using just those variables - the first has been done for you.
@@ -165,7 +151,7 @@ console.log(foo + bar)
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: badge
 :END:
-To earn your third *Blue JavaScript Badge*, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
+To earn your third *JavaScript Badge*, complete the tasks below. Once you have finished, ask your teacher to check your code to make sure it runs correctly.
 - Declare a variable called foo
 - Declare a variable called bar
 - Assign foo the value of 6
